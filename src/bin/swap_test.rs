@@ -32,8 +32,8 @@ fn main() -> Result<(), CircuitError> {
     let states = [
         (0b000, 0b000),
         (0b000, 0b001),
-        (0b001, 0b000), 
-        (0b001, 0b001)
+        (0b001, 0b000),
+        (0b001, 0b001),
     ];
 
     // Calculate final state

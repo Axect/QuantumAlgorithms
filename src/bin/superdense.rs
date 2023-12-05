@@ -34,18 +34,20 @@ fn main() -> Result<(), CircuitError> {
     let (_, m_handle_b) = l.measure(b);
 
     // Calculate final state
-    let alice_states = [
-        (0, 0),
-        (0, 1),
-        (1, 0),
-        (1, 1)
-    ];
+    let alice_states = [(0, 0), (0, 1), (1, 0), (1, 1)];
 
     for (alice1, alice2) in alice_states.into_iter() {
         let (_, measured) = l.calculate_state_with_init([(&e1, alice1), (&e2, alice2)]);
         let (result_a, p_a) = measured.get_measurement(m_handle_a);
         let (result_b, p_b) = measured.get_measurement(m_handle_b);
-        println!("Measured: {}{} with probability: {:.4}", result_a, result_b, p_a * p_b);
+        println!(
+            "Input: {}{}, Measured: {}{} with probability: {:.4}",
+            alice1,
+            alice2,
+            result_a,
+            result_b,
+            p_a * p_b
+        );
     }
 
     Ok(())
