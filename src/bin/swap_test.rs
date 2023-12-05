@@ -19,7 +19,7 @@ fn main() -> Result<(), CircuitError> {
     let mut cb = b.condition_with(q);
     let (ra, rb) = cb.swap(ra, rb)?;
 
-    // Dissolve ancilla qubit
+    // Dissolve ancilla qubit (recover ownership)
     let q = cb.dissolve();
 
     // Apply Hadamard gate to ancilla qubit
@@ -29,7 +29,12 @@ fn main() -> Result<(), CircuitError> {
     let (_, m_handle) = b.measure(q);
 
     // Prepare initial states for two qubits
-    let states = [(0, 0), (0, 1), (1, 0), (1, 1)];
+    let states = [
+        (0b000, 0b000),
+        (0b000, 0b001),
+        (0b001, 0b000), 
+        (0b001, 0b001)
+    ];
 
     // Calculate final state
     let mut measured_states = vec![];
