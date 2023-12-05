@@ -7,3 +7,4 @@ Topic | Implemented in QIP | Implemented in Pennylane
 SWAP Test | [:heavy_check_mark:](./src/bin/swap_test.rs) | [:heavy_check_mark:](./notebook/swap_test.ipynb)
 Superdense Coding | [:heavy_check_mark:](./src/bin/superdense.rs) | [:heavy_check_mark:](./notebook/superdense.ipynb)
 Quantum Teleportation | [:heavy_check_mark:](./src/bin/teleport.rs) | [:heavy_check_mark:](./notebook/teleport.ipynb)
+Deutsch Algorithm | [:heavy_check_mark:](./src/bin/deutsch.rs) | [:heavy_check_mark:](./notebook/deutsch.ipynb)
