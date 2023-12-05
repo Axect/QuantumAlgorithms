@@ -41,17 +41,23 @@ fn main() -> Result<(), CircuitError> {
 
     let ht = THETA / 2.0;
     let (s, c) = ht.sin_cos();
-    let result = format!("
-    Input: {:.4}|0> + {:.4}|1>
+    println!(
+        "
+        Input: {:.4}|0> + {:.4}|1>
 
-    Input probability vector:
-        {:.4}, {:.4}
+        Input probability vector:
+            {:.4}, {:.4}
 
-    Output probability vector:
-        {:.4}, {:.4}
-    ", c, s, c.powi(2), s.powi(2), result_b[0], result_b[1]);
-
-    println!("{}", result);
+        Output probability vector:
+            {:.4}, {:.4}
+        ",
+        c,
+        s,
+        c.powi(2),
+        s.powi(2),
+        result_b[0],
+        result_b[1]
+    );
 
     Ok(())
 }
