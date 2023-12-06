@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 dialoguer = "0.11.0"
+peroxide = "0.34.3"
 qip = "1.4.0"
