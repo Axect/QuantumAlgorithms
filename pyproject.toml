@@ -14,4 +14,7 @@ dependencies = [
     "numpy ==1.26.2",
     "cirq ==1.3.0",
     "setuptools",
+    "pylatexenc ==2.10",
+    "qiskit-aer ==0.13.1",
+    "qiskit-ibm-runtime ==0.16.1",
 ]
