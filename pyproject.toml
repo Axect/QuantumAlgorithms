@@ -11,6 +11,8 @@ dependencies = [
     "setuptools>=69.0.2",
     "matplotlib>=3.8.2",
     "pennylane-qiskit>=0.33.1",
+    "qiskit[visualize]>=0.45.1",
+    "pylatexenc>=2.10",
 ]
 requires-python = ">=3.11"
 readme = "README.md"

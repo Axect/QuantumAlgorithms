@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform"]
 lock_version = "4.4"
-content_hash = "sha256:56864988c1017437d794a32feb3984bebbcb8c1c88d5a2367fc921d2e4abed35"
+content_hash = "sha256:0174ee0abb70da48182f9c80c79bf44a4f14f638f4a45e3f7230a5cfa028fdf9"
 
 [[package]]
 name = "anyio"
@@ -1395,6 +1395,14 @@ files = [
 ]
 
 [[package]]
+name = "pylatexenc"
+version = "2.10"
+summary = "Simple LaTeX parser providing latex-to-unicode and unicode-to-latex conversion"
+files = [
+    {file = "pylatexenc-2.10.tar.gz", hash = "sha256:3dd8fd84eb46dc30bee1e23eaab8d8fb5a7f507347b23e5f38ad9675c84f40d3"},
+]
+
+[[package]]
 name = "pyparsing"
 version = "3.1.1"
 requires_python = ">=3.6.8"
@@ -1651,6 +1659,20 @@ files = [
     {file = "qiskit_terra-0.45.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9f8500c757386354fbb1d9424395541b90cc72d8b0dadaf2606d01190fa7594d"},
     {file = "qiskit_terra-0.45.1-cp38-abi3-win32.whl", hash = "sha256:f9c641c6a14b599aca1de59c9c2c2cd7a711000749523f0d6f503a3445ddd4b6"},
     {file = "qiskit_terra-0.45.1-cp38-abi3-win_amd64.whl", hash = "sha256:f41387fa19145f5ed22fa5f7e3bed44ba4ee4ba06bfbfada83b5a516587f2a74"},
+]
+
+[[package]]
+name = "qiskit"
+version = "0.45.1"
+extras = ["visualize"]
+requires_python = ">=3.8"
+summary = "Software for developing quantum computing programs"
+dependencies = [
+    "qiskit==0.45.1",
+]
+files = [
+    {file = "qiskit-0.45.1-py3-none-any.whl", hash = "sha256:86a757f38f4934a0668cafd3bf0a18e3abaeac697d14f0a9e155cfab2d8c1817"},
+    {file = "qiskit-0.45.1.tar.gz", hash = "sha256:1ae868c514db3e35c0a75d8ec08002491b9301586647637f11f744f8a376bb9e"},
 ]
 
 [[package]]

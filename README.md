@@ -8,10 +8,10 @@ Various quantum algorithms implemented in [Pennylane](https://pennylane.ai/) and
 
 - If you want to see explanation of each algorithms then click the pennylane link in the table below.
 
-|          Topic          |               Implemented in Pennylane               |            Implemented in RustQIP             |
-|:-----------------------:|:----------------------------------------------------:|:---------------------------------------------:|
-|        SWAP Test        |   [:heavy_check_mark:](./notebook/swap_test.ipynb)   | [:heavy_check_mark:](./src/bin/swap_test.rs)  |
-|    Superdense Coding    |  [:heavy_check_mark:](./notebook/superdense.ipynb)   | [:heavy_check_mark:](./src/bin/superdense.rs) |
-|  Quantum Teleportation  |   [:heavy_check_mark:](./notebook/teleport.ipynb)    |  [:heavy_check_mark:](./src/bin/teleport.rs)  |
-|    Deutsch Algorithm    |    [:heavy_check_mark:](./notebook/deutsch.ipynb)    |  [:heavy_check_mark:](./src/bin/deutsch.rs)   |
-| Deutsch-Jozsa Algorithm | [:heavy_check_mark:](./notebook/deutsch_jozsa.ipynb) |       [:x:](./src/bin/deutsch_jozsa.rs)       |
+|          Topic          |                      Pennylane                       |                    RustQIP                    |                           Qiskit                            |
+|:-----------------------:|:----------------------------------------------------:|:---------------------------------------------:|:-----------------------------------------------------------:|
+|        SWAP Test        |   [:heavy_check_mark:](./notebook/swap_test.ipynb)   | [:heavy_check_mark:](./src/bin/swap_test.rs)  |                             :x:                             |
+|    Superdense Coding    |  [:heavy_check_mark:](./notebook/superdense.ipynb)   | [:heavy_check_mark:](./src/bin/superdense.rs) |                             :x:                             |
+|  Quantum Teleportation  |   [:heavy_check_mark:](./notebook/teleport.ipynb)    |  [:heavy_check_mark:](./src/bin/teleport.rs)  |                             :x:                             |
+|    Deutsch Algorithm    |    [:heavy_check_mark:](./notebook/deutsch.ipynb)    |  [:heavy_check_mark:](./src/bin/deutsch.rs)   |                             :x:                             |
+| Deutsch-Jozsa Algorithm | [:heavy_check_mark:](./notebook/deutsch_jozsa.ipynb) |       [:x:](./src/bin/deutsch_jozsa.rs)       | [:heavy_check_mark:](./notebook_qiskit/deutsch_jozsa.ipynb) |
