@@ -1,6 +1,6 @@
 # Quantum Algorithms
 
-Various quantum algorithms implemented in [Pennylane](https://pennylane.ai/) and [RustQIP](https://github.com/Renmusxd/RustQIP).
+Various quantum algorithms implemented in [Pennylane](https://pennylane.ai/), [RustQIP](https://github.com/Renmusxd/RustQIP), [Qiskit](https://qiskit.org/) and [Cirq](https://quantumai.google/cirq).
 
 ## Implemented Algorithms
 
