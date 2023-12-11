@@ -8,4 +8,5 @@ edition = "2021"
 [dependencies]
 dialoguer = "0.11.0"
 peroxide = "0.34.3"
-qip = "1.4.0"
+qip = { version = "1.4.0", features = ["macros"] }
+qip-macros = "1.0.0"

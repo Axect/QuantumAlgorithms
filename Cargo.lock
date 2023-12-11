@@ -322,6 +322,7 @@ dependencies = [
  "num-rational",
  "num-traits",
  "qip-iterators",
+ "qip-macros",
  "rand",
  "rayon",
  "smallvec",
@@ -338,12 +339,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "qip-macros"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f31ad36355be17a2c40ef486b2e1e26617db625eb192aaa748b28d68969618d2"
+
+[[package]]
 name = "quantum_algorithm"
 version = "0.1.0"
 dependencies = [
  "dialoguer",
  "peroxide",
  "qip",
+ "qip-macros",
 ]
 
 [[package]]
