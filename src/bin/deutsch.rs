@@ -1,5 +1,5 @@
-use qip::prelude::*;
 use dialoguer::{theme::ColorfulTheme, Select};
+use qip::prelude::*;
 use std::result::Result;
 
 #[allow(unused_variables)]
@@ -67,10 +67,15 @@ fn main() -> Result<(), CircuitError> {
     // Deutsch's algorithm
     // if result in 0 state, f is constant
     // if result in 1 state, f is balanced
-    println!("
+    println!(
+        "
         f(0) = {}, f(1) = {}
         f is {}.
-    ", f0, f1, if result == 0 { "constant" } else { "balanced" });
+    ",
+        f0,
+        f1,
+        if result == 0 { "constant" } else { "balanced" }
+    );
 
     Ok(())
 }
@@ -89,9 +94,21 @@ fn U<F: Fn(usize) -> usize>(f: F) -> [Complex<f64>; 16] {
     let f1 = f(1) as f64;
 
     real_mat_to_complex_mat([
-        1.0 - f0, f0, 0.0, 0.0,
-        f0, 1.0 - f0, 0.0, 0.0,
-        0.0, 0.0, 1.0 - f1, f1,
-        0.0, 0.0, f1, 1.0 - f1,
+        1.0 - f0,
+        f0,
+        0.0,
+        0.0,
+        f0,
+        1.0 - f0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0 - f1,
+        f1,
+        0.0,
+        0.0,
+        f1,
+        1.0 - f1,
     ])
 }

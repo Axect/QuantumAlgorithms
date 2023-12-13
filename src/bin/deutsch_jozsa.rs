@@ -1,19 +1,10 @@
-use qip::prelude::*;
+use dialoguer::{theme::ColorfulTheme, Select};
 use peroxide::fuga::*;
+use qip::prelude::*;
+use quantum_algorithm::apply_if;
 use std::result::Result;
-use dialoguer::{theme::ColorfulTheme, Input, Select};
 
 const N: usize = 10;
-
-macro_rules! apply_if {
-    ($cond:expr, $action:expr, $val:expr) => {
-        if $cond {
-            $action
-        } else {
-            $val
-        }
-    };
-}
 
 macro_rules! apply_oracle {
     ($l:ident;$n:ident;$case:expr;$($q:ident=>$i:expr),+; $a:ident) => {{
@@ -55,9 +46,9 @@ fn main() -> Result<(), CircuitError> {
         .unwrap();
     let case = match case {
         0 => Case::Balanced,
-        _ => Case::Constant
+        _ => Case::Constant,
     };
-    
+
     let mut l = LocalBuilder::<f64>::default();
     let q1 = l.qubit();
     let q2 = l.qubit();
@@ -94,7 +85,7 @@ fn main() -> Result<(), CircuitError> {
 #[derive(Debug, Copy, Clone)]
 pub enum Case {
     Balanced,
-    Constant
+    Constant,
 }
 
 impl std::fmt::Display for Case {
