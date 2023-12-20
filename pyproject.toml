@@ -17,4 +17,6 @@ dependencies = [
     "pylatexenc ==2.10",
     "qiskit-aer ==0.13.1",
     "qiskit-ibm-runtime ==0.16.1",
+    "ray ==2.8.1",
+    "sympy ==1.12",
 ]
